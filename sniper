@@ -1,0 +1,23 @@
+while true do
+game:GetService('StarterGui'):SetCore("DevConsoleVisible", true)
+
+getgenv().Cynx = {
+    boothSniper = {
+        autoSnipe = true,
+        snipeItem = {
+            {Class = "Misc", Name = "Gift Bag", Price = 3300},
+},
+        sendStats = true,
+        webhookURL = "https://discord.com/api/webhooks/1223599257731207259/E6xls7U-baaXHeJcoGUSSQYdl7XNGQsRz6Hd27cnNINxyE-yIVEHg2CGCrVzIejuLy-1", -- WEBHOOK DOESN'T WORK I NEED TO LOOK INTO IT.
+    }
+}
+
+local success, result = pcall(function()
+    return loadstring(game:HttpGet("https://raw.githubusercontent.com/ParadoxHB/Snipe/main/Sniper"))()
+end)
+
+if not success then
+    warn("Error occurred while loading external script:", result)
+end
+task.wait(2)
+end
