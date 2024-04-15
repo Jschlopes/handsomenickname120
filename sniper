@@ -19,5 +19,4 @@ end)
 if not success then
     warn("Error occurred while loading external script:", result)
 end
-task.wait(2)
 end
